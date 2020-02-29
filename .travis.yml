@@ -1,10 +1,10 @@
 sudo: required
 services :
-  -docker
+  - docker
 
 
 bedfore_install :
-  -docker build  -t test/docker-react -f Dockerfile.dev .
+  - docker build  -t test/docker-react -f Dockerfile.dev .
 
 
 script:
